@@ -1,4 +1,4 @@
-# birthday-wish
+# Birthday Card Web Page
 
 Birthday Card Web Page
 
