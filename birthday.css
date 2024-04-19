@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/564x/a7/99/3d/a7993de1237adb96cfd54984416c63bb.jpg);
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-family: "Sevillana", sans-serif;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-family: "Sevillana", sans-serif;
+}
+
+p {
+    font-size: 1.4rem;
+    font-family: "Sevillana", sans-serif;
+}
+
+.tune {
+    display: none;
+}
+
+.container {
+    max-width: 720px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100vw;
+    margin-inline: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(196, 199, 39, 0.281), rgba(207, 75, 14, 0.623));
+    border-bottom-left-radius: 10% 50px;
+    border-bottom-right-radius: 10% 50px;
+    border-top: 0;
+    backdrop-filter: blur(1px);
+    
+}
+
+.wish {
+    text-align: center;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px 20px rgb(255, 0, 234), 3px 3px 5px rgb(255, 0, 43);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bannerbaloon {
+    position: relative;
+}
+
+.bannerbaloon img {
+    width: 80px;
+}
+
+.hero {
+    margin-block: 25px;
+    display: flex;
+    justify-content: center;
+    transition: 0.17s ease-in-out;
+    
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px rgb(255, 174, 0), -5px -5px 20px rgb(255, 174, 0);
+}
+
+.hero:active {
+    transform: scale(110%);
+}
+
+.outer-shadow {
+    position: absolute;
+    height: 316px;
+    width: 250px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px rgb(255, 174, 0), -5px -5px 20px rgb(255, 174, 0);
+    animation: move-shadow 1s infinite alternate ease-in-out;    
+}
+
+.inner-shadow {
+    position: absolute;
+    height: 316px;
+    width: 250px;
+    border-radius: 50px;
+    box-shadow: inset 7px 7px 20px 4px rgb(255, 174, 0), inset -7px -7px 20px 4px rgb(255, 174, 0);
+    transition: 0.17s ease-in-out;
+    animation: move-shadow 1s infinite alternate ease-in-out;
+}
+
+.shadow:active {
+    box-shadow: none;
+}
+
+@keyframes move-shadow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(104%);
+    }
+  }
+
+.footertext {
+    padding: 20px;border-radius: 50px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    text-shadow: 5px 5px 4px rgb(226, 192, 1);
+    letter-spacing: 0.5px;
+}
