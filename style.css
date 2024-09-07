@@ -25,6 +25,7 @@ body {
   left: calc(50% - 90px); /* Center horizontally */
   cursor: pointer;
   animation: move-balloon 0.8s infinite alternate ease-in-out;
+  
 }
 
 @keyframes move-balloon {
@@ -49,6 +50,14 @@ body {
     transform: translateY(-47vh) scale(20);
     opacity: 30%;
   }
+}
+
+.click-me {
+  text-align: center;
+  transform: translateY(80px);
+  color: White;
+  font-weight: 600;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 }
 
 
