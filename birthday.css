@@ -56,7 +56,7 @@ p {
     align-self: center;
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    text-shadow: 3px 3px 20px rgb(255, 0, 234), 3px 3px 5px rgb(255, 0, 43);
+    text-shadow: 3px 3px 20px rgb(255, 0, 0), 3px 3px 5px rgb(255, 0, 43);
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -113,7 +113,7 @@ p {
 
 @keyframes move-shadow {
     0% {
-      transform: scale(1);
+      transform: scale(1.07);
     }
     100% {
       transform: scale(104%);
